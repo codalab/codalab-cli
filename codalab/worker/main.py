@@ -209,7 +209,7 @@ def main():
 
     # Configure logging
     logging.basicConfig(
-        format='%(asctime)s %(message)s', level=(logging.DEBUG if args.verbose else logging.INFO)
+        format='%(asctime)s %(message)s', level=(logging.INFO if args.verbose else logging.WARNING)
     )
 
     # Initialize sentry logging
